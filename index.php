@@ -6,9 +6,11 @@
     $app['debug'] = true;
 
     // paths to application
-    $p = __DIR__ . '/web/source/arcmarks_index.php';
-    $q = __DIR__ . '/web-es/source/index.html';
+    $p = __DIR__ . '/web/source/index.html';
+    // $q = __DIR__ . '/web-es/source/index.html';
 
+
+/*
     // handles www.arcmarks.com/es requests
     $app->get('/es', function() use($app, $q) {
         return ob($q);
@@ -20,6 +22,7 @@
         $pub_req = $name;
         return ob($p);
     });
+*/
 
     // handles www.arcmarks.com requests
     $app->get('/', function() use($app, $p) {
