@@ -1,0 +1,435 @@
+/*<|main_css|>*/
+
+/*
+  RESETS
+  COMMON
+  BOXES
+  TOGGLES
+  FRAMEWORK
+  MEDIA QUERIES
+*/
+
+
+/***************************************************************************************************
+  RESETS
+*/
+
+
+* {
+  padding:  0;
+  margin:  0;
+  line-height: 100%;
+}
+body{
+  height:  100%;
+  text-align: center;
+}
+body > * {
+  text-align: left;
+}
+html{
+  height: 100%;
+}
+input[type="text"] {
+  -webkit-appearance:  none;
+}
+
+
+/***************************************************************************************************
+  COMMON
+*/
+
+
+p, a, label{
+  font-family:  "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+}
+.radius_left{
+  border-radius:  4px 0px 0px 4px;
+}
+.radius_right{
+  border-radius:  0px 4px 4px 0px;
+}
+.radius_all{
+  border-radius:  4px;
+}
+.shadow {
+  box-shadow:   0px 1px 3px rgba(25, 25, 25, 0.4);
+}
+.bright {
+  box-shadow:   0 0 5px 5px rgba(255,255,255,1);
+}
+
+/* <p>
+*/
+
+p.small_white{
+  font-size:    10px;
+  color:        #ffffff;
+}
+p.small_dark{
+  font-size:    10px;
+  color:        #222222;
+}
+p.small_lighter {
+  font-size:    10px;
+  color:        #aaaaaa;
+}
+p.small_light {
+  font-size:    11px;
+  color:        #666666;
+}
+p.medium_dark{
+  font-size:    12px;
+  color:        #222222;
+}
+p.medium_light1{
+  font-size:    12px;
+  color:        #888888;
+}
+p.medium_light{
+  font-size:    13px;
+  color:        #888888;
+}
+p.medium_white{
+  font-size:    13px;
+  color:        #ffffff;
+}
+p.large_dark{
+  font-size:    15px;
+  color:        #222222;
+}
+p.large_medium_1{
+  font-size:    14px;
+  color:        #888888;
+}
+p.large_medium_2{
+  font-size:    16px;
+  color:        #888888;
+}
+p.spaced_dark{
+   font-size:   16px;
+   color:       #222222;
+}
+p.large_medium{
+  font-size:    18px;
+  color:        #666666;
+}
+p.super_dark{
+  font-size:   18px;
+  font-weight: bold;
+  color:       #222222;
+}
+p.large_white{
+  font-size:    16px;
+  color:        #ffffff;
+}
+
+
+/* <a>
+*/
+
+a{
+  text-decoration: none;
+  font-size:  11px;
+  color:  #113c71;
+}
+.media{
+}
+a.tweet{
+}
+a.bookmark_tweet{
+    color:  #9f0000;
+}
+a.bookmark_link{
+  font-size:  12px;
+}
+a.bookmark_delete{
+  font-size:  12px;
+  color:  orange;
+}
+a:hover.bookmark_delete{
+  color:  #ff0000;
+}
+
+/* <ul>
+*/
+
+ul {
+    display: block;
+    list-style: disc;
+}
+
+/***************************************************************************************************
+*BOXES
+*/
+
+
+.box_background_glass{
+  background: rgba(255,255,255,0.5);
+}
+.i_box{
+  width:  300px;
+  height:  185px;
+  border-radius:  4px;
+}
+.i_box_r{
+  z-index:  -100;    
+  width:  260px;
+  height:  50px;
+  border-radius:  4px; 
+}
+#box_r1_new{
+  position:absolute;
+  width:  230px;
+  height:  30px;
+  border-radius:  4px;
+  background:  #ffffff;
+  opacity: .5;
+}
+.box_r1{
+  position:absolute;
+  width:  260px;
+  height:  50px;
+  border-radius:  4px;
+  border:  1px solid #ffffff;
+}
+.box_r2{
+  position:  absolute;
+  width:  261px;
+  height:  51px;
+  border-radius:  4px;
+  background:  #ffffff;
+  opacity: .5;
+  border: 1px solid #d5d5d5;
+}
+
+
+/***************************************************************************************************
+  TOGGLES
+*/
+
+
+.toggle_tag_active{
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #444444;
+  color: #222222;
+}
+.toggle_tag_lazy{
+  font-size:    14px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #dddddd;
+  color: #888888;
+}
+.toggle_page_lazy{
+  display: none;
+  opacity: 0;
+}
+.toggle_page_active{
+  display: inline;
+}
+.toggle_label_show{
+  opacity: 1;
+}
+.toggle_label_obscure{
+  opacity: .7;
+}
+.toggle_label_hide{
+  opacity: 0;
+}
+.toggle_border_show{
+  border: 1px solid #cccccc;
+}
+.toggle_border_obscure{
+  border: 1px solid #888888;
+}
+.toggle_border_hide{
+  border: 1px solid #444444;
+}
+
+
+/***************************************************************************************************
+  Pages
+*/
+
+
+#body_splash{
+  display: none;
+  opacity: 0;
+}
+#body_main{
+  display: none;
+  opacity: 0;
+}
+#body_settings{
+  display: none;
+  opacity: 0;
+}
+#body_public{
+  display: none;
+  opacity: 0;
+}
+#heading_splash{
+  display: none;
+  position:  relative;
+  opacity: 0;
+}
+#heading_main{
+  display: none;
+  position:  relative;
+  opacity: 0;
+}
+#heading_public{
+  display: none;
+  position:  relative;
+  opacity: 0;
+}
+
+
+/***************************************************************************************************
+ Repsonsive Framework
+*/
+
+
+/* SMALL BLACK LINE
+*/
+
+#Y{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background: #000000;
+}
+
+/* CLEAR HEADER W/ CENTERING
+*/
+
+#C{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid #ffffff;
+
+}
+#Ca{
+  position: relative;
+  width: 1000px;
+  height: 40px;
+  margin: 0 auto;
+  border-left: 1px dotted #ffffff;
+  border-right: 1px dotted #ffffff;
+}
+
+/* BODY W/ CENTERING
+*/
+
+#B{
+}
+#Ba{
+  position:  relative;
+  width:  1000px;
+  height:  100%;
+  margin-left:  auto;
+  margin-right:  auto;
+}
+#container-1{
+  display: inline-block;
+  position: relative;
+  width: 1000px;
+  top: 50px;
+  margin: 0px auto;
+}
+
+/***************************************************************************************************
+  MEDIA QUERIES
+*/
+
+
+/* All
+*/
+
+
+#su_but {
+  display:none;
+}
+#un_box{
+  display:inline-block;
+}
+
+#si_but {
+  display:none;
+}
+#ue1_box{
+  display:inline-block;
+}
+
+/* Maximum allowable at 1000px
+*/
+
+@media screen and (max-width: 1000px){
+
+
+
+#Ca{
+  width: 100%;
+}
+#container-1{
+  width: 100%;
+}
+
+
+}
+
+
+/* Break point at 500px
+*/
+
+
+@media screen and (max-width: 500px){
+
+#su_but {
+  display:inline-block;
+}
+#si_but {
+  display:inline-block;
+}
+
+/*
+*/
+
+#un_box{
+  display:none;
+}
+#ue1_box{
+  display:none;
+}
+
+#left-column{
+  width: 100%;
+}
+#right-column{
+  width: 100%;
+}
+
+
+}
+
+
+/* Minimum allowable at 300px
+*/
+
+
+@media screen and (max-width: 300px){
+
+
+
+#Ca{
+  width: 300px;
+}
+#container-1{
+  width: 300px;
+}
+
+
+}
